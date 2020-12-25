@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--
+            mobile: 0-576px; tablet: 576-992px; desktop: 992px+
+        -->
+        <link rel="stylesheet" type="text/css" href="assignment_styles.css">
+        <script src="https://kit.fontawesome.com/bdabdf87bd.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Project</title>
+        <link rel="shortcut icon" href="images/logo_title.png" />
+    </head>
+    <body id = "1p">
+        <div class = "whole_padding">
+        <nav class = "menu" id = "1p">
+            <a href = "" class = "left_side">
+                <img src="images/logo.png" alt="" class = "logo">
+                <p class = "name"> 
+                    CompanyName
+                </p>
+            </a>
+            <div class = "right_side">
+                <div class = "dropdown">
+                <a href="" class = "link">Home</a>
+                <a href="#1s" class = "link">Company</a>
+                <a href="#2s" class = "link">Products</a>
+                <a href="#3s" class = "link">Services</a>
+                <a href="#4s" class = "link">Blog</a>
+                <a href="#5s" class = "link">Contacts</a>
+                </div>
+                <a class = "o_link" id = "ol">ClientArea</a>
+                <i class="fas fa-bars fa-lg" id = "secondary"></i>
+                
+            </div>
+        </nav>
+        <div class = "dropdown1">
+            <a class = "dr" id = "ol1">ClientArea</a>
+            <a href="" class = "dr">Home</a>
+            <a href="#1s" class = "dr">Company</a>
+            <a href="#2s" class = "dr">Products</a>
+            <a href="#3s" class = "dr">Services</a>
+            <a href="#4s" class = "dr">Blog</a>
+            <a href="#5s" class = "dr">Contacts</a>
+        </div>
+
+        <!--Return to the top-->
+
+        <a href="#1p" class = "return-to-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!--Modal Form-->
+
+        <div class = "modal">
+            <div class = "modal_flex">
+            <div class = "modal_content">
+                <header class = "modal_header">
+                <h1>
+                    Sign in
+                </h1>
+                <span class = close>&times;</span>
+                </header>
+
+                <form class = modal_form>
+                    <input type="text" id = "modal_email" placeholder="Your Email" autocomplete="off">
+                    <input type="password" id = "modal_password" placeholder="Your Password" autocomplete="off">
+                    <p class = "modal-error_1">Invalid Email</p>
+                    <p class = "modal-error_2">Please enter a Password</p>
+                    <input type="button" value="Login" id = modal_submit>
+                </form>
+            </div>
+            <div class = "success">
+                <h1>Success!</h1>
+                <span class = close>&times;</span>
+                <p>Welcome back</p>
+            </div>
+            </div>
+        </div>
+
+        <!--Main body-->
+
+        <section class = "intro_w"> <!--Image background-->
+            <div class = content>
+                <h1>
+                    Company XYZ
+                </h1>
+                <p>
+                    Random is the random randomness
+                </p>
+                <a href="" class = "o_link_2">GO</a>
+            </div>
+        </section>
+
+        <p id = "1s"></p>
+
+        <section class = "about_us_w">
+            <h1>
+                About us
+            </h1>
+            <article class = "flex_wrap">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis bibendum felis in lobortis. Pellentesque non augue cursus, porta nisi rutrum, posuere turpis. Mauris nec risus dictum, maximus justo sit amet, ullamcorper ex.
+            </p>
+            <div class = "image_container">
+                <img src="thumbnails/flower_1_thumbnail.jpg" alt="" class = "image">
+                <img src="thumbnails/flower_2_thumbnail.jpg" alt="" class = "image">
+                <img src="thumbnails/flower_3_thumbnail.jpg" alt="" class = "image">
+            </div>
+            </article>
+        </section>
+
+        <p id = "2s"></p>
+
+        <section class = "products_w"><!--Image background-->
+            <div class = "padding">
+            <h1>
+                Our products
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis bibendum felis in lobortis. Pellentesque non augue cursus, porta nisi rutrum, posuere turpis. Mauris nec risus dictum, maximus justo sit amet, ullamcorper ex. Maecenas rhoncus volutpat ipsum, ut semper ipsum dapibus in. Mauris vitae sollicitudin liberot semper ipsum.
+            </p>
+            <div class = "image_container_2">
+                <div class = "first_half">
+                <a href=""><img src="thumbnails/camera_1_thumbnail.jpg" alt="" class = image_2></a>
+                <a href=""><img src="thumbnails/camera_2_thumbnail.jpg" alt="" class = image_2></a>
+                <a href=""><img src="thumbnails/camera_3_thumbnail.jpg" alt="" class = image_2></a>
+                </div>
+                <div class = "second_half">
+                <a href=""><img src="thumbnails/camera_4_thumbnail.jpg" alt="" class = image_2></a>
+                <a href=""><img src="thumbnails/camera_5_thumbnail.jpg" alt="" class = image_2></a>
+                <a href=""><img src="thumbnails/camera_6_thumbnail.jpg" alt="" class = image_2></a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <p id = "3s"></p>
+        
+        <section class = services_w>
+            <h1>
+                Our Services
+            </h1>
+            <div class = "flex_wrap_2">
+            <div class = "service_1">
+                <img src="thumbnails/services_1_thumbnail.jpg" alt="" class = "image_3">
+                <h2 class = "services_header">Service 1</h2>
+                <p class = services_paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class = "services_link">Link</a>
+            </div>
+            <div class = "service_2">
+                <img src="thumbnails/services_2_thumbnail.jpg" alt="" class = "image_3">
+                <h2 class = "services_header">Service 2</h2>
+                <p class = services_paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class = "services_link">Link</a>
+            </div>
+            <div class = "service_3">
+                <img src="thumbnails/services_3_thumbnail.jpg" alt="" class = "image_3">
+                <h2 class = "services_header">Service 3</h2>
+                <p class = services_paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class = "services_link">Link</a>
+            </div>
+            <div class = "service_4">
+                <img src="thumbnails/services_4_thumbnail.jpg" alt="" class = "image_3">
+                <h2 class = "services_header">Service 4</h2>
+                <p class = services_paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class = "services_link">Link</a>
+            </div>
+        </div>
+        </section>
+
+        <p id = "4s"></p>
+
+        <section class = portfolio_w><!--Image background-->
+            <h1>
+                Our portfolio
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis bibendum felis in lobortis. Pellentesque non augue cursus, porta nisi rutrum, posuere turpis. Mauris nec risus dictum, maximus justo sit amet, ullamcorper ex. Maecenas rhoncus volutpat ipsum, ut semper ipsum dapibus in. Mauris vitae sollicitudin libero. Vestibulum condimentum felis et pharetra condimentum. Duis odio nibh, varius cursus justo tincidunt, varius suscipit quam. Mauris porttitor ante augue.
+            </p>
+            <div class = "image_container_3">
+                <div>
+                    <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "secondary_image">
+                    <p>Some text</p>
+                </div>
+                <div>
+                    <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "secondary_image">
+                    <p>Some text</p>
+                </div>
+                <div>
+                    <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "secondary_image">
+                    <p>Some text</p>
+                </div>
+                <div>
+                    <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "secondary_image">
+                    <p>Some text</p>
+                </div>
+            </div>
+            <a href="">Button</a>
+            <div class = "image_container_4">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            <img src="thumbnails/portfolio_thumbnail.jpg" alt="" class = "primary_image">
+            </div>
+        </section>
+
+
+
+        <form class = "newsletter_w">
+            <h1>
+                Subscribe to our newsletter
+            </h1>
+            <hr>
+            <div class = "container">
+                <div class = "flex_wrap_3">
+                <input type="text" name="" id="email" placeholder="Valid Email" autocomplete="off">
+                <input type="password" name="" id="password" placeholder="Password" autocomplete="off">
+                <input type="text" name="" id="name" placeholder="First Name" autocomplete="off">
+                <input type="tel" name="" id="phone" placeholder="Phone Number" autocomplete="off">
+                <input type="button" value="Sign me up" id = "button">
+                </div>
+                <div class = "password_error">
+                        <p>Password must contain the following: </p>
+                        <p class = "lowercase">A <b>lowercase</b> letter</p>
+                        <p class = "capital">A <b>capital(uppercase)</b> letter</p>
+                        <p class = number>A <b>number</b></p>
+                        <p class = "limit">Minimum <b>8 characters</b></p>
+                </div>
+                <div class = "email_error">
+                    <p class = "em">Invalid Email!</p>
+                </div>
+                <div class = "name_error">
+                    <p class = "nm">Invalid name!</p>
+                </div>
+                <div class = "phone_error">
+                    <p class = "ph">Invalid phone number!</p>
+                </div>
+            </div>
+        </form>
+        </div>
+
+        <p id="5s" class = "sth"></p>
+
+        <div class = "full">
+        <footer class = "_w"><!--Solid color background-->
+            <h1>Contacts</h1>
+            <hr>
+            <div class = "footer_1">
+                <h2>Subtitle</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis bibendum felis in lobortis. Pellentesque non augue cursus, porta nisi rutrum, posuere turpis. Mauris nec risus dictum, maximus justo sit amet, ullamcorper ex.</p>
+            </div>
+            <div class = "footer_1">
+                <h2>Subtitle</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis bibendum felis in lobortis. Pellentesque non augue cursus, porta nisi rutrum, posuere turpis. Mauris nec risus dictum, maximus justo sit amet, ullamcorper ex.</p>
+            </div>
+            <div class = "footer_1">
+                <h2>Subtitle</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis bibendum felis in lobortis. Pellentesque non augue cursus, porta nisi rutrum, posuere turpis. Mauris nec risus dictum, maximus justo sit amet, ullamcorper ex.</p>
+            </div>
+        </footer>
+        </div>
+    </body>
+    
+    <script>
+        var isShown = false;
+        var emailerr = true;
+        var passerr = true;
+        var nameerr = true;
+        var pherr = true;
+
+        /*Logo and slogan animation*/
+        $(document).ready(function(){
+            $(".content").fadeTo(1000,1);
+        })
+        
+        /*Dropdown menu*/
+        $("#secondary").click(function(){
+            if (isShown == false)
+            {
+                $(".dropdown1").slideDown();
+                isShown = true;
+            }
+            else
+            {
+                $(".dropdown1").slideUp();
+                isShown = false;
+            }
+        });
+
+        /*To-Top button animation and scroll*/
+
+        $(window).scroll(function(){
+            if ($(window).scrollTop()>50)
+            {
+                $(".return-to-top").fadeIn(200);
+            }
+            else
+            {
+                $(".return-to-top").fadeOut(200);
+            }
+        })
+
+        /*Modal display*/
+
+        $("#ol").click(function(){
+            $(".modal").css("display", "block");
+            $(".modal_content").fadeTo(500,1);
+        })
+
+        $("#ol1").click(function(){
+            $(".modal").css("display", "block");
+            $(".modal_content").fadeTo(500,1);
+        })
+
+        /*Modal Hide*/
+
+        $(".close").click(function(){
+            $(".modal").css("display", "none");
+            $(".modal_content").css("opacity", "0");
+            $(".modal-error_1").css("display", "none");
+            $(".modal-error_2").css("display", "none");
+
+            $(".success").css("display", "none");
+            $("#modal_email").val("");
+            $("#modal_password").val("");
+        })
+
+        $(".modal").click(function(){
+            $(".modal").css("display", "none");
+            $(".modal_content").css("opacity", "0");
+            $(".modal-error_1").css("display", "none");
+            $(".modal-error_2").css("display", "none");
+
+            $(".success").css("display", "none");
+            $("#modal_email").val("");
+            $("#modal_password").val("");
+
+        })
+
+        $(".modal_content").click(function(event){
+            event.stopPropagation();
+        })
+
+        $(".success").click(function(event){
+            event.stopPropagation();
+        })
+
+        /*Modal Sumbit*/
+
+        $("#modal_submit").click(function(){
+            var e_e = false;
+            var p_e = false;
+
+            /*Modal Eamil Validation*/
+
+            var re1 = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(re1.test($("#modal_email").val()))
+            {
+                e_e = false;
+            }
+            else
+            {
+                e_e = true;
+                $(".modal-error_1").slideDown();
+            }
+
+            /*Password Validation*/
+
+            if ($("#modal_password").val() == "")
+            {
+                p_e = true;
+                $(".modal-error_2").slideDown();
+            }
+            else
+            {
+                p_e = false;
+            }
+
+            if (!p_e&&!e_e)
+            {
+
+                $.ajax
+                ({
+                    method: "POST",
+                    url: "local.php",
+                    data:{
+                        Memail: $("#modal_email").val(),
+                        Mpassword: $("#modal_password").val(),
+                        name: $("#name").val()
+                    },
+                    error: function()
+                    {
+                        $(".success p").html("An unexpected error has occured!");
+                        $(".success h1").html("");
+                        $(".success").fadeIn();
+                        $(".success").css("display", "inline-block");
+                        $(".modal_content").css("display", "none");
+                    }
+                    
+                }).done(function(msg){
+                    if (msg=="success")
+                    {
+                        $(".success h1").html("Success!")
+                        $(".success p").html("Welcome back");
+                        $(".success").fadeIn();
+                        $(".success").css("display", "inline-block");
+                        $(".modal_content").css("display", "none");
+                    }
+                })
+            }
+
+        })
+
+        /*Password validation*/
+
+        $("#password").focus(function(){
+            $(".password_error").slideDown();
+        })
+
+        $("#password").blur(function(){
+            $(".password_error").slideUp();
+        })
+
+
+        $("#password").keyup(function(){
+            var pas = $("#password").val();
+            var err1 = true;
+            var err2 = true;
+            var err3 = true;
+            var err4 = true;
+            if (pas.match(/[a-z]/))
+            {
+                $(".lowercase").css("color", "green")
+                err1 = false;
+            }
+            else
+            {
+                $(".lowercase").css("color", "darkred")
+                err1 = true
+            }
+
+            if (pas.match(/[A-Z]/))
+            {
+                $(".capital").css("color", "green")
+                err2 = false;
+            }
+            else
+            {
+                $(".capital").css("color", "darkred")
+                err2 = true;
+            }
+
+            if (pas.match(/\d/))
+            {
+                $(".number").css("color", "green")
+                err3 = false;
+            }
+            else
+            {
+                $(".number").css("color", "darkred")
+                err3 = true;
+            }
+
+            if (pas.length > 8)
+            {
+                $(".limit").css("color", "green")
+                err4 = false;
+            }
+            else
+            {
+                $(".limit").css("color", "darkred")
+                err4 = true;
+            }
+
+            if (!err1&&!err2&&!err3&&!err4)
+            {
+                passerr = false;
+                $("#password").css("background-color", "white");
+            }
+            else
+            {
+                passerr = true;
+            }
+        })
+
+        /*Email validation*/
+        
+        $("#email").focus(function(){
+            $(".email_error").slideDown();
+        })
+
+        $("#email").blur(function(){
+            $(".email_error").slideUp();
+        })
+
+        $("#email").keyup(function(){
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if(re.test($("#email").val()))
+            {
+                $(".email_error").css("color", "green");
+                $(".em").text("The Email address is valid!");
+                $("#email").css("background-color", "white");
+                emailerr = false;
+            }
+            else
+            {
+                $(".email_error").css("color", "darkred");
+                $(".em").text("Invalid Email!");
+                emailerr = true;
+            }
+        })
+
+        /*Name validation*/
+
+        $("#name").focus(function(){
+            $(".name_error").slideDown();
+        })
+
+        $("#name").blur(function(){
+            $(".name_error").slideUp();
+        })
+
+        $("#name").keyup(function(){
+            var regName = /^[a-zA-Z]/;
+            if (regName.test($("#name").val()) && $("#name").val().length >= 3)
+            {
+                $(".name_error").css("color", "green");
+                $(".nm").text("The name provided is valid!");
+                $("#name").css("background-color", "white");
+                nameerr = false;
+            }
+            else
+            {
+                $(".name_error").css("color", "darkred");
+                $(".nm").text("Invalid Name!");
+                nameerr = true;
+            }
+        })
+
+        /*Phone validation*/
+
+        $("#phone").focus(function(){
+            $(".phone_error").slideDown();
+        })
+
+        $("#phone").blur(function(){
+            $(".phone_error").slideUp();
+        })
+
+        $("#phone").keyup(function(){
+            var regPhone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+            if (regPhone.test($("#phone").val()))
+            {
+                $(".phone_error").css("color", "green");
+                $(".ph").text("The name provided is valid!");
+                $("#phone").css("background-color", "white");
+                pherr = false;
+            }
+            else
+            {
+                $(".phone_error").css("color", "darkred");
+                $(".ph").text("Invalid phone number!");
+                pherr = true;
+            }
+        })
+
+        /*Submit button*/
+
+
+        $("#button").click(function(){
+            if (!emailerr&&!nameerr&&!passerr&&!pherr)
+            {
+                $.ajax
+                ({
+                    method: "POST",
+                    url: "local.php",
+                    data:{
+                        email: $("#email").val(),
+                        password: $("#password").val(),
+                        name: $("#name").val(),
+                        phone: $("#phone").val()
+                    },
+                    error: function()
+                    {
+                        $(".modal").css("display", "block");
+                        $(".success p").html("An unexpected error has occured!");
+                        $(".success h1").html("");
+                        $(".success").fadeIn();
+                        $(".success").css("display", "inline-block");
+                        $(".modal_content").css("display", "none");
+                    }
+                }).done(function(msg){
+                        if (msg == 'success')
+                        {
+                        $(".modal").css("display", "block");
+                        $(".success h1").html("Success!");
+                        $(".success p").html("Confirmation email was sent to <b>" + $("#email").val());
+                        $(".success").fadeIn();
+                        $(".success").css("display", "inline-block");
+                        $(".modal_content").css("display", "none");
+
+                        $("#email").val("");
+                        $("#password").val("");
+                        $("#name").val("");
+                        $("#phone").val("");
+                        emailerr = true;
+                        nameerr = true;
+                        passerr = true;
+                        pherr = true;
+                        }
+                    
+                })
+
+            }
+            else
+            {
+                if(emailerr)
+                {
+                    $("#email").css("background-color","rgb(252, 208, 208)");
+                }
+                if(nameerr)
+                {
+                    $("#name").css("background-color","rgb(252, 208, 208)");
+                }
+                if(passerr)
+                {
+                    $("#password").css("background-color","rgb(252, 208, 208)");
+                }
+                if (pherr)
+                {
+                    $("#phone").css("background-color","rgb(252, 208, 208)");
+                }
+            }
+        })
+
+    </script>
+</html>
