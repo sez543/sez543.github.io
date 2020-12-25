@@ -1,0 +1,299 @@
+/*Fonts*/
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(BalooChettan2-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "myFirstFont", cursive;
+}
+
+/*Universal Width*/
+
+[class*="u-width"] {
+  width: 1920px;
+}
+
+/*Modal*/
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.modal_flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_content {
+  background-color: #19444e;
+  display: inline-flex;
+  color: white;
+  font-size: 21px;
+  position: relative;
+  opacity: 0;
+}
+
+/*Close button*/
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #0f292f;
+}
+
+/*Side navigation*/
+
+.side_nav {
+  margin: 0;
+  padding: 0px;
+  display: inline-block;
+  background-color: #0f292f;
+  padding: 0 20px;
+}
+
+/*Menu options*/
+
+.side_nav li {
+  width: 250px;
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: 15px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.pc {
+  margin: 0;
+  padding: 15px 25px 10px 0;
+
+  transition: all 0.3s ease;
+}
+
+.side_nav li:hover {
+  border-bottom: 1px solid #14a098;
+}
+
+.pc:hover {
+  padding-left: 30px;
+}
+
+#welcome {
+  cursor: auto;
+  border-bottom: 1px solid #14a098;
+}
+
+#welcome .pc {
+  padding-left: 30px;
+}
+
+/*Articles*/
+
+.right_side {
+  text-align: center;
+}
+
+/*Welcome section*/
+
+.welcome_section {
+  padding: 35px;
+}
+
+.welcome_section h1 {
+  width: 300px;
+  margin: 30px 150px;
+}
+
+.welcome_section a {
+  color: #14a098;
+}
+
+.welcome_section a:hover {
+  color: #0d7570;
+}
+
+.welcome_section p {
+  width: 600px;
+}
+
+.b {
+  margin: 50px 0 15px 0;
+}
+
+/*Navigation*/
+
+.n-u-width {
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  background-color: #0f292f;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+
+/*Buttons*/
+
+[class*="button"] {
+  background-color: #14a098;
+  box-shadow: 2px 2px #021312;
+  display: inline-block;
+  padding: 15px 15px;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+[class*="button"]:hover {
+  background-color: #0d7570;
+}
+
+/*Mobile button*/
+
+.dropdown {
+  display: none;
+  margin: 10px 0;
+}
+
+/*Button section*/
+
+.press {
+  margin: 10px 0;
+}
+
+/*Slider section*/
+
+.sliders {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0;
+  width: 70%;
+}
+
+.box {
+  margin: 0 25px;
+  position: relative;
+  width: 30%;
+}
+
+[class*="-val"] {
+  padding-left: 7px;
+  width: 30px;
+  text-align: left;
+}
+
+.label {
+  width: 100%;
+}
+
+.box p {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #cccccc;
+  outline: none;
+  width: 100%;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #14a098;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: #0d7570;
+}
+
+/*Higher resolitons*/
+
+@media only screen and (max-width: 1920px) {
+  [class*="u-width"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .dropdown {
+    display: inline-block;
+  }
+  .sliders {
+    display: none;
+  }
+}
+
+/*Tablets*/
+
+@media only screen and (max-width: 992px) {
+  nav {
+    font-size: 17px;
+  }
+
+  [class*="button"] {
+    padding: 12px 12px;
+  }
+
+  .press {
+    margin: 7px 0;
+  }
+
+  .dropdown {
+    margin: 7px 0;
+  }
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 576px) {
+  nav {
+    font-size: 15px;
+  }
+
+  [class*="button"] {
+    padding: 9px 9px;
+  }
+
+  .press {
+    margin: 5px 0;
+  }
+
+  .dropdown {
+    margin: 5px 0;
+  }
+}
