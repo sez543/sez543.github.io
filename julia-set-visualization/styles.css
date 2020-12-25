@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  position: fixed;
+  padding: 20px;
+  right: 0;
+  top: 0;
+}
+
+.co {
+  display: inline-block;
+  text-align: right;
+}
+
+input {
+  width: 250px;
+  display: block;
+  padding: 5px 3px;
+  margin: 10px 0px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+[class*="button"] {
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+[class*="button"]:hover {
+  background-color: rgb(221, 219, 219);
+}
+
+.button-download {
+  position: fixed;
+  margin: 20px;
+  bottom: 0;
+  right: 0;
+}
