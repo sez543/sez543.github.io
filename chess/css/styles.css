@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Board Dimentions*/
+
+body {
+  padding: 10px;
+  text-align: center;
+}
+
+[class*="board"] {
+  display: inline-flex;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+  background-color: rgb(163, 163, 163);
+  border: 1px solid black;
+}
+
+[class*="Black"] {
+  transform: rotate(180deg);
+}
+
+[class*="Black"] .tile {
+  transform: rotate(180deg);
+}
+
+.row {
+  display: inline-flex;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Tile Coloring*/
+
+.row:nth-of-type(2n + 1) .tile:nth-of-type(2n) {
+  background-color: rgb(74, 106, 128);
+}
+
+.row:nth-of-type(2n + 1) .tile:nth-of-type(2n + 1) {
+  background-color: rgb(232, 244, 252);
+}
+
+.row:nth-of-type(2n) .tile:nth-of-type(2n) {
+  background-color: rgb(232, 244, 252);
+}
+
+.row:nth-of-type(2n) .tile:nth-of-type(2n + 1) {
+  background-color: rgb(74, 106, 128);
+}
+
+/*White Figures*/
+
+#White_Pawn {
+  background-image: url("../images/Figures/White/pawn.svg");
+}
+
+#White_Rook {
+  background-image: url("../images/Figures/White/rook.svg");
+}
+
+#White_Knight {
+  background-image: url("../images/Figures/White/knight.svg");
+}
+
+#White_Bishop {
+  background-image: url("../images/Figures/White/bishop.svg");
+}
+
+#White_Queen {
+  background-image: url("../images/Figures/White/queen.svg");
+}
+
+#White_King {
+  background-image: url("../images/Figures/White/king.svg");
+}
+
+/*Black Figures*/
+
+#Black_Pawn {
+  background-image: url("../images/Figures/Black/pawn.svg");
+}
+
+#Black_Rook {
+  background-image: url("../images/Figures/Black/rook.svg");
+}
+
+#Black_Knight {
+  background-image: url("../images/Figures/Black/knight.svg");
+}
+
+#Black_Bishop {
+  background-image: url("../images/Figures/Black/bishop.svg");
+}
+
+#Black_Queen {
+  background-image: url("../images/Figures/Black/queen.svg");
+}
+
+#Black_King {
+  background-image: url("../images/Figures/Black/king.svg");
+}
+
+/*Shaders*/
+
+[class*="shader"] {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+}
+
+.dark_shader {
+  background-color: black;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.dark_shader:hover {
+  opacity: 0.1;
+}
+
+.selection_shader {
+  background-color: black;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 0.25;
+}
+
+.green_shader {
+  background-color: rgb(88, 221, 88);
+  opacity: 0.25;
+}
+
+.yellow_shader {
+  background-color: rgb(255, 255, 95);
+  opacity: 0.25;
+}
+
+.red_shader {
+  background-color: red;
+  opacity: 0.25;
+}

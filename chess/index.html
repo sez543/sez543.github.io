@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Angular CDNs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chess Engine</title>
+    <!-- Page icon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/icons/knight.svg"
+    />
+  </head>
+  <body>
+    <!-- Main Angular object-->
+    <div ng-app="Chess_Engine" ng_controller="Main">
+      <!-- Board container-->
+      <div
+        class="board_{{Board.Turn}}"
+        ng-controller="board"
+        ng-init="Generate_Board()"
+      >
+        <div
+          class="row"
+          ng-repeat="row in Board.matrix track by $index"
+          ng-init="X = $index"
+        >
+          <div
+            id="{{tile.Color}}_{{tile.Type}}"
+            class="tile"
+            ng-repeat="tile in row track by $index"
+            ng-init="Y = $index"
+            ng-click="Chess_Logic(tile, X, Y)"
+          >
+            <!-- Shaders-->
+            <div
+              class="dark_shader"
+              ng-if="(tile.isEmpty==false&&tile.Selected==false)||tile.Available == true"
+            ></div>
+            <div class="selection_shader" ng-if="tile.Selected==true"></div>
+            <div class="green_shader" ng-if="tile.Available==true"></div>
+            <div class="yellow_shader" ng-if="tile.Castle==true"></div>
+            <div class="red_shader" ng-if="tile.Check==true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Main script-->
+  <script src="index.js"></script>
+</html>
