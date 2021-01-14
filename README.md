@@ -1,4 +1,5 @@
-<div style="font-family: 'Fira Code'">
+<link ref="stylesheet" href="md_styles.css">
+<div style="font-family: 'Fira Code', monospace; ">
 <h1 style="text-align:center;"> Welcome to my GitHub!</h1>
 <h3> The main page for sez543.github.io has not been finished yet. In the meantime feel free to check out my projects through the placehoder webpage or through this README file.</h3>
 <br>
