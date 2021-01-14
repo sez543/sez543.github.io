@@ -38,6 +38,10 @@ body {
   animation-name: fadein;
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -55,12 +59,13 @@ h3 {
 }
 
 .buttons {
-  margin: 30px 0;
+  margin: 20px 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 700px;
 }
 
 .btn.btn-info {
